@@ -1,7 +1,7 @@
 # CasesDash
 to keep track of cases
 
-### Installation
+### Install
 
 Using [npm](https://www.npmjs.com/):
 
@@ -13,7 +13,7 @@ Using [webpack](https://webpack.github.io/):
 
     $ webpack
 
-### Start Server
+### Start
 
 Using [npm](https://www.npmjs.com/):
 
