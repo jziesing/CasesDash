@@ -19,3 +19,6 @@ Using [npm](https://www.npmjs.com/):
 
     $ npm run dev
 
+### Visit
+
+    http://localhost:3000/
