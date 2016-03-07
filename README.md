@@ -7,7 +7,7 @@ Using [npm](https://www.npmjs.com/):
 
     $ npm install
 
-### Transpile
+### Build
 
 Using [webpack](https://webpack.github.io/):
 
@@ -19,6 +19,6 @@ Using [npm](https://www.npmjs.com/):
 
     $ npm run dev
 
-### Visit
+### Use
 
     http://localhost:3000/
