@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from './Home'
 
 
 class Layout extends React.Component {
