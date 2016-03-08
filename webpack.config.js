@@ -10,7 +10,7 @@ module.exports = {
             {
                 loader: 'babel-loader',
                 test: /\.jsx?$/,
-                exclude: /(node_modules|code_snippets)/,
+                exclude: /(node_modules|bower_components)/,
                 query: {
                     presets: ['react', 'es2015', 'stage-0'],
                     plugins: ['react-html-attrs', 'add-module-exports']
