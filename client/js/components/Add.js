@@ -2,11 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 
 
-const styles = {}
-styles.body = {
-  margin: 70,
-}
-
 class Add extends React.Component {
   render() {
     return (

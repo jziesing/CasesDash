@@ -3,11 +3,6 @@ import { Link } from 'react-router'
 import ajax from 'superagent'
 
 
-const styles = {}
-styles.body = {
-  margin: 70,
-}
-
 class Case extends React.Component {
 
   constructor(props) {
