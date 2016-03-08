@@ -20,7 +20,7 @@ Using [webpack](https://webpack.github.io/):
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm run dev
+    $ npm start
 
 ### Use
 
