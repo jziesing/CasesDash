@@ -7,10 +7,10 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-          mode: 'commits',
-          commits: [],
-          search_commits: [],
-          searchString: ''
+      mode: 'commits',
+      commits: [],
+      search_commits: [],
+      searchString: ''
     };
   }
 
@@ -21,23 +21,23 @@ class Home extends React.Component {
 
   fetchData(type, state) {
     ajax.get(`https://api.github.com/repos/facebook/react/${type}`)
-        .end((error, response) => {
-            if (!error && response) {
-                this.setState({ [state]: response.body });
-            } else {
-                console.log(`Error fetching ${type}`, error);
-            }
+      .end((error, response) => {
+        if (!error && response) {
+            this.setState({ [state]: response.body });
+        } else {
+            console.log(`Error fetching ${type}`, error);
         }
+      }
     );
   }
 
   renderData() {
     return this.state.search_commits.map((commit, index) => {
-        const author = commit.author ? commit.author.login : 'Anonymous';
-        const route = 'case/' + author + '-' + index;
-        return (
-          <tr key={index}><td>{index + 1}</td><td><Link to={route}>{author}</Link></td><td>{commit.commit.message}</td></tr>
-      );
+      const author = commit.author ? commit.author.login : 'Anonymous';
+      const route = 'case/' + author + '-' + index;
+      return (
+        <tr key={index}><td>{index + 1}</td><td><Link to={route}>{author}</Link></td><td>{commit.commit.message}</td></tr>
+    );
     });
   }
 
